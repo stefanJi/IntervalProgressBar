@@ -4,7 +4,7 @@ A interval progress widget for Flutter.
 
 ## Preview
 
-<img src="./doc/intervalprogressbar.png" width=400 alt="demo">
+<img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/intervalprogressbar.png" width=400 alt="demo">
 
 ## Features
 
