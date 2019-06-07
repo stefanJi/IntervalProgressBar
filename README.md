@@ -6,6 +6,16 @@ A interval progress widget for Flutter.
 
 <img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/intervalprogressbar.png" width=400 alt="demo">
 
+## Depend on it
+
+https://pub.dev/packages/intervalprogressbar
+
+Add this to your package's pubspec.yaml file:
+```
+dependencies:
+  intervalprogressbar: ^0.0.2
+```
+
 ## Features
 
 - Horizontal
