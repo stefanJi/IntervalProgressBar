@@ -1,6 +1,6 @@
 # IntervalProgressBar
 
-A interval progress widget for Flutter.
+An interval progress widget for Flutter.
 
 ## Preview
 
