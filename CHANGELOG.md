@@ -1,3 +1,5 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.3] - 2019/06/09.
 
-* TODO: Describe initial release.
+* implement horizontal, vertical progress
+* implement colorful progress
+
