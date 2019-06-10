@@ -1,6 +1,6 @@
 # IntervalProgressBar
 
-[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V0.0.3&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
+[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V1.0.0&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
 
 An interval progress widget for Flutter.
 
@@ -15,7 +15,7 @@ https://pub.dev/packages/intervalprogressbar
 Add this to your package's pubspec.yaml file:
 ```
 dependencies:
-  intervalprogressbar: ^0.0.3
+  intervalprogressbar: ^{last_version}
 ```
 
 ## Features
@@ -33,8 +33,7 @@ dependencies:
 Center(
    child: Row(
        mainAxisAlignment: MainAxisAlignment.center,
-       children: [10, 29, 18, 27, 16, 15, 24, 3, 20, 10]
-           .map<Widget>((i) {
+       children: [10, 29, 18, 27, 16, 15, 24, 3, 20, 10].map<Widget>((i) {
          return Padding(
              padding: EdgeInsets.only(right: 10),
              child: IntervalProgressBar(

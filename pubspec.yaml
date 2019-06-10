@@ -1,6 +1,6 @@
 name: intervalprogressbar
-description: A interval progress bar for Flutter.
-version: 0.0.3
+description: A interval progress bar for Flutter. Horizontal, vertical, colorful and interval progress.
+version: 1.0.0
 author: StefanJi <jidaoyang@gmail.com>
 homepage: https://github.com/stefanJi/IntervalProgressBar
 
