@@ -1,6 +1,6 @@
 # IntervalProgressBar
 
-[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V1.0.0&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
+[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V1.0.1&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
 
 An interval progress widget for Flutter.
 
