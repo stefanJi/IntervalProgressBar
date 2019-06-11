@@ -26,5 +26,5 @@
 .pub-cache/
 .pub/
 build/
-android/
-ios/
+./android/
+./ios/

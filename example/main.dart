@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:intervalprogressbar/intervalprogressbar.dart';
 
-Widget buildAProgressBar() {
+Widget buildProgressBars() {
   return Center(
     child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -23,4 +23,9 @@ Widget buildAProgressBar() {
                   radius: 0));
         }).toList()),
   );
+}
+
+void main() {
+  final app = MaterialApp(home: buildProgressBars());
+  runApp(app);
 }

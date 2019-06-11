@@ -39,6 +39,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  intervalprogressbar:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0"
   matcher:
     dependency: transitive
     description:
@@ -61,7 +68,7 @@ packages:
     source: hosted
     version: "1.6.2"
   pedantic:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: pedantic
       url: "https://pub.dartlang.org"
