@@ -8,6 +8,10 @@ An interval progress widget for Flutter.
 
 <img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/intervalprogressbar.png" width=400 alt="demo">
 
+![demo2](./doc/demo2.png)
+
+> v2.0.1 added
+
 ## Depend on it
 
 https://pub.dev/packages/intervalprogressbar
@@ -22,34 +26,66 @@ dependencies:
 
 - Horizontal
 - Vertical
+- Circle
 - Interval Progress
 - Colorful
 
 ## Getting Started
 
-### Preview Sample Code
+### Usage
 
 ```dart
-Center(
-   child: Row(
-       mainAxisAlignment: MainAxisAlignment.center,
-       children: [10, 29, 18, 27, 16, 15, 24, 3, 20, 10].map<Widget>((i) {
-         return Padding(
-             padding: EdgeInsets.only(right: 10),
-             child: IntervalProgressBar(
-                 direction: IntervalProgressDirection.vertical,
-                 max: 30,
-                 progress: i,
-                 intervalSize: 2,
-                 size: Size(12, 200),
-                 highlightColor: Colors.red,
-                 defaultColor: Colors.grey,
-                 intervalColor: Colors.transparent,
-                 intervalHighlightColor: Colors.transparent,
-                 reverse: true,
-                 radius: 0));
-       }).toList()),
-)
+Widget buildHorizontal() => IntervalProgressBar(
+    direction: IntervalProgressDirection.horizontal,
+    max: 30,
+    progress: 10,
+    intervalSize: 2,
+    size: Size(400, 10),
+    highlightColor: Colors.red,
+    defaultColor: Colors.grey,
+    intervalColor: Colors.transparent,
+    intervalHighlightColor: Colors.transparent,
+    reverse: true,
+    radius: 0);
+```
+
+```dart
+Widget buildVertical() => Row(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [10, 29, 18, 27, 16, 15, 24, 3, 20, 10].map<Widget>((i) {
+      return Padding(
+          padding: EdgeInsets.only(right: 10),
+          child: IntervalProgressBar(
+              direction: IntervalProgressDirection.vertical,
+              max: 30,
+              progress: i,
+              intervalSize: 2,
+              size: Size(12, 200),
+              highlightColor: Colors.red,
+              defaultColor: Colors.grey,
+              intervalColor: Colors.transparent,
+              intervalHighlightColor: Colors.transparent,
+              reverse: true,
+              radius: 0));
+    }).toList());
+```
+
+```dart
+Widget buildCircle() => IntervalProgressBar(
+      direction: IntervalProgressDirection.circle,
+      max: 30,
+      progress: 10,
+      intervalSize: 2,
+      size: Size(200, 200),
+      highlightColor: Colors.red,
+      defaultColor: Colors.grey,
+      intervalColor: Colors.transparent,
+      intervalHighlightColor: Colors.transparent,
+      reverse: true,
+      radius: 0,
+      intervalDegrees: 5,
+      strokeWith: 5,
+    );
 ```
 
 ### Property
@@ -67,3 +103,5 @@ Center(
 |intervalHighlightColor| `Color`|color of intervals which between highlight blocks |
 |reverse|`bool`||
 |radius|`int`||
+|intervalDegrees|`double`|support for circle progress|
+|strokeWith|`int`|support for circle progress|
