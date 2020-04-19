@@ -1,16 +1,14 @@
 # IntervalProgressBar
 
-[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V1.0.1&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
+[![Package](https://img.shields.io/static/v1.svg?label=Pub&message=V2.0.1&color=green&style=for-the-badge)](https://pub.dartlang.org/packages/intervalprogressbar)
 
 An interval progress widget for Flutter.
 
 ## Preview
 
-<img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/intervalprogressbar.png" width=400 alt="demo">
-
-![demo2](./doc/demo2.png)
-
-> v2.0.1 added
+|v1|v2|
+|:---:|:---:|
+|<img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/intervalprogressbar.png" width=400 alt="demo">|<img src="https://raw.githubusercontent.com/stefanJi/IntervalProgressBar/master/doc/demo2.png" width=400 alt="demo v2.0.1">|
 
 ## Depend on it
 
