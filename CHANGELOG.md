@@ -13,3 +13,6 @@
 
 * add runnable example project
 
+## [2.0.1] - 2020/04/19
+
+* add circle progress
