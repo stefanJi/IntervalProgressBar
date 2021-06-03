@@ -1,10 +1,10 @@
 name: intervalprogressbar
 description: A interval progress bar for Flutter. Horizontal, vertical, colorful and interval progress.
-version: 2.0.1
+version: 2.1.0
 homepage: https://github.com/stefanJi/IntervalProgressBar
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
   flutter:

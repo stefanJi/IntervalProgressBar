@@ -1,8 +1,7 @@
 import 'dart:math';
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:intervalprogressbar/intervalprogressbar.dart';
+import 'package:zireh/widgets/interval_progress_bar/interval_progress_bar.dart';
 
 class CircleProgressPainter extends IntervalProgressPainter {
   final double strokeWidth;
@@ -19,22 +18,13 @@ class CircleProgressPainter extends IntervalProgressPainter {
       bool reverse,
       double intervalPercent,
       this.strokeWidth)
-      : super(
-            max,
-            progress,
-            intervalSize,
-            highlightColor,
-            defaultColor,
-            intervalColor,
-            intervalHighlightColor,
-            radius,
-            reverse,
-            intervalPercent);
+      : super(max, progress, intervalSize, highlightColor, defaultColor, intervalColor,
+            intervalHighlightColor, radius, reverse, intervalPercent);
 
   @override
   Size calBlockSize() {
     //Circle Progress will not call this
-    return null;
+    return Size(0, 0);
   }
 
   @override
@@ -53,12 +43,11 @@ class CircleProgressPainter extends IntervalProgressPainter {
 
     Rect rect = Offset.zero & size;
     final radius = min(rect.height, rect.width);
-    final r =
-        Rect.fromCenter(center: rect.center, width: radius, height: radius);
+    final r = Rect.fromCenter(center: rect.center, width: radius, height: radius);
 
-    final incr = (360.0 - this.intervalDegrees * (this.max - 1)) / (this.max);
+    final degrees = (360.0 - this.intervalDegrees * (this.max - 1)) / (this.max);
     final intervalRadians = degrees2radians(this.intervalDegrees);
-    final swap = degrees2radians(incr);
+    final swap = degrees2radians(degrees);
 
     var start = 0.0;
 
